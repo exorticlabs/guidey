@@ -1,0 +1,186 @@
+{
+  "topic": "Binary Search",
+  "frames": [
+    {
+      "step": 1,
+      "title": "Search Space Initialization",
+      "description": "We start with a sorted array. We search for Target = 9. Low pointer is at index 0, High is at index 6. We calculate Mid = (0 + 6) / 2 = 3.",
+      "elements": [
+        {
+          "id": "arr_1",
+          "type": "box",
+          "label": "1",
+          "x": 0,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "arr_3",
+          "type": "box",
+          "label": "3",
+          "x": 1.5,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "arr_5",
+          "type": "box",
+          "label": "5",
+          "x": 3,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "arr_7",
+          "type": "box",
+          "label": "7",
+          "x": 4.5,
+          "y": 0,
+          "highlight": true
+        },
+        {
+          "id": "arr_9",
+          "type": "box",
+          "label": "9",
+          "x": 6,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "arr_11",
+          "type": "box",
+          "label": "11",
+          "x": 7.5,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "arr_13",
+          "type": "box",
+          "label": "13",
+          "x": 9,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "ptr_L",
+          "type": "text",
+          "label": "L",
+          "x": 0,
+          "y": 1.5,
+          "highlight": false
+        },
+        {
+          "id": "ptr_H",
+          "type": "text",
+          "label": "H",
+          "x": 9,
+          "y": 1.5,
+          "highlight": false
+        },
+        {
+          "id": "ptr_M",
+          "type": "text",
+          "label": "Mid",
+          "x": 4.5,
+          "y": 1.5,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Search Space Shifted Right",
+      "description": "Low is moved to Mid + 1 = 4. High remains at 6. New Mid = (4 + 6) / 2 = 5.",
+      "elements": [
+        {
+          "id": "arr_9",
+          "type": "box",
+          "label": "9",
+          "x": 6,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "arr_11",
+          "type": "box",
+          "label": "11",
+          "x": 7.5,
+          "y": 0,
+          "highlight": true
+        },
+        {
+          "id": "arr_13",
+          "type": "box",
+          "label": "13",
+          "x": 9,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "ptr_L",
+          "type": "text",
+          "label": "L",
+          "x": 6,
+          "y": 1.5,
+          "highlight": false
+        },
+        {
+          "id": "ptr_H",
+          "type": "text",
+          "label": "H",
+          "x": 9,
+          "y": 1.5,
+          "highlight": false
+        },
+        {
+          "id": "ptr_M",
+          "type": "text",
+          "label": "Mid",
+          "x": 7.5,
+          "y": 1.5,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Target Located",
+      "description": "High is moved to Mid - 1 = 4. Low remains at 4. New Mid = (4 + 4) / 2 = 4.",
+      "elements": [
+        {
+          "id": "arr_9",
+          "type": "box",
+          "label": "9",
+          "x": 6,
+          "y": 0,
+          "highlight": true
+        },
+        {
+          "id": "ptr_L",
+          "type": "text",
+          "label": "L",
+          "x": 6,
+          "y": 1.5,
+          "highlight": true
+        },
+        {
+          "id": "ptr_H",
+          "type": "text",
+          "label": "H",
+          "x": 6,
+          "y": 2.5,
+          "highlight": true
+        },
+        {
+          "id": "ptr_M",
+          "type": "text",
+          "label": "Mid",
+          "x": 6,
+          "y": 3.5,
+          "highlight": true
+        }
+      ]
+    }
+  ]
+}

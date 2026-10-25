@@ -1,0 +1,90 @@
+{
+  "topic": "Derivative as Limits (Slope at x = 1)",
+  "frames": [
+    {
+      "step": 1,
+      "title": "Secant Line (h = 1.0)",
+      "description": "We want to find the slope of y = x\u00b2 at P(1, 1). We pick a second point Q at x = 1 + h. With h = 1.0, Q is at (2, 4).",
+      "elements": [
+        {
+          "id": "point_P",
+          "type": "node",
+          "label": "P(1,1)",
+          "x": 2,
+          "y": 8,
+          "highlight": false
+        },
+        {
+          "id": "point_Q",
+          "type": "node",
+          "label": "Q(2,4)",
+          "x": 8,
+          "y": 2,
+          "highlight": true
+        },
+        {
+          "id": "line_secant",
+          "type": "text",
+          "label": "Secant Slope = 3.0",
+          "x": 5,
+          "y": 5,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Secant Line Approaching (h = 0.5)",
+      "description": "We move Q closer by reducing h to 0.5. Q is now at (1.5, 2.25). Notice the secant line gets closer to the curve tangent.",
+      "elements": [
+        {
+          "id": "point_P",
+          "type": "node",
+          "label": "P(1,1)",
+          "x": 2,
+          "y": 8,
+          "highlight": false
+        },
+        {
+          "id": "point_Q",
+          "type": "node",
+          "label": "Q(1.5, 2.25)",
+          "x": 5,
+          "y": 5.5,
+          "highlight": true
+        },
+        {
+          "id": "line_secant",
+          "type": "text",
+          "label": "Secant Slope = 2.5",
+          "x": 3.5,
+          "y": 6.75,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "The Limit State (h -> 0)",
+      "description": "As h approaches 0, Q merges into P. The secant line becomes the tangent line. The slope reaches the limit value of 2.0.",
+      "elements": [
+        {
+          "id": "point_P",
+          "type": "node",
+          "label": "P(1,1) [h->0]",
+          "x": 2,
+          "y": 8,
+          "highlight": true
+        },
+        {
+          "id": "line_secant",
+          "type": "text",
+          "label": "Tangent Slope = 2.0",
+          "x": 2,
+          "y": 8,
+          "highlight": true
+        }
+      ]
+    }
+  ]
+}

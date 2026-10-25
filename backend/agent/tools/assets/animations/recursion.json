@@ -1,0 +1,112 @@
+{
+  "topic": "Recursion Stack (Factorial of 3)",
+  "frames": [
+    {
+      "step": 1,
+      "title": "Initial Call",
+      "description": "The user calls fact(3). The execution stack allocates space to resolve fact(3). To resolve it, it must compute 3 * fact(2).",
+      "elements": [
+        {
+          "id": "call_3",
+          "type": "box",
+          "label": "fact(3) = 3 * fact(2)",
+          "x": 5,
+          "y": 8,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Pushing Call fact(2)",
+      "description": "fact(2) is called from fact(3). A new call frame is pushed to the stack. To resolve it, it must compute 2 * fact(1).",
+      "elements": [
+        {
+          "id": "call_3",
+          "type": "box",
+          "label": "fact(3) = 3 * fact(2)",
+          "x": 5,
+          "y": 8,
+          "highlight": false
+        },
+        {
+          "id": "call_2",
+          "type": "box",
+          "label": "fact(2) = 2 * fact(1)",
+          "x": 5,
+          "y": 6,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Pushing Base Case fact(1)",
+      "description": "fact(1) is called. This matches our recursive base case. It returns 1 directly without calling itself.",
+      "elements": [
+        {
+          "id": "call_3",
+          "type": "box",
+          "label": "fact(3) = 3 * fact(2)",
+          "x": 5,
+          "y": 8,
+          "highlight": false
+        },
+        {
+          "id": "call_2",
+          "type": "box",
+          "label": "fact(2) = 2 * fact(1)",
+          "x": 5,
+          "y": 6,
+          "highlight": false
+        },
+        {
+          "id": "call_1",
+          "type": "box",
+          "label": "fact(1) = 1 (Base Case)",
+          "x": 5,
+          "y": 4,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Unwinding Stack: Resolving fact(2)",
+      "description": "fact(1) returns 1. The frame is popped off the stack, and fact(2) can now finish calculation: 2 * 1 = 2.",
+      "elements": [
+        {
+          "id": "call_3",
+          "type": "box",
+          "label": "fact(3) = 3 * fact(2)",
+          "x": 5,
+          "y": 8,
+          "highlight": false
+        },
+        {
+          "id": "call_2",
+          "type": "box",
+          "label": "fact(2) = 2 * (1) = 2",
+          "x": 5,
+          "y": 6,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Unwinding Stack: Resolving fact(3)",
+      "description": "fact(2) returns 2. The frame is popped off the stack, and fact(3) resolves: 3 * 2 = 6. The stack is empty.",
+      "elements": [
+        {
+          "id": "call_3",
+          "type": "box",
+          "label": "fact(3) = 3 * (2) = 6",
+          "x": 5,
+          "y": 8,
+          "highlight": true
+        }
+      ]
+    }
+  ]
+}

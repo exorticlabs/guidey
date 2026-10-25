@@ -1,0 +1,47 @@
+# ==============================================================================
+# Backend .gitignore
+# ==============================================================================
+
+# Private Data & Databases
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Dynamic Agent Memory & Workspaces
+agent/memory/
+agent_memory/
+
+# Evaluation dumps & temp scripts
+generated_plans_evaluation.json
+scripts/
+*.xlsx
+*.csv
+filetree.md
+details.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.pytest_cache/
+
+# Secrets & Environment
+.env*
+!.env.example
+
+# Supabase
+supabase/.temp/
+supabase/.branches/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

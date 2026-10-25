@@ -1,0 +1,161 @@
+{
+  "topic": "Bubble Sort",
+  "frames": [
+    {
+      "step": 1,
+      "title": "Initial Unsorted Array",
+      "description": "We want to sort the array [5, 1, 4, 2]. We begin the first pass comparing adjacent values at index 0 and 1.",
+      "elements": [
+        {
+          "id": "val_5",
+          "type": "box",
+          "label": "5",
+          "x": 0,
+          "y": 0,
+          "highlight": true
+        },
+        {
+          "id": "val_1",
+          "type": "box",
+          "label": "1",
+          "x": 1.5,
+          "y": 0,
+          "highlight": true
+        },
+        {
+          "id": "val_4",
+          "type": "box",
+          "label": "4",
+          "x": 3,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "val_2",
+          "type": "box",
+          "label": "2",
+          "x": 4.5,
+          "y": 0,
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Swapping & Continuing Pass 1",
+      "description": "After swapping 5 and 1, we now compare adjacent elements at index 1 and 2 (5 and 4).",
+      "elements": [
+        {
+          "id": "val_1",
+          "type": "box",
+          "label": "1",
+          "x": 0,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "val_5",
+          "type": "box",
+          "label": "5",
+          "x": 1.5,
+          "y": 0,
+          "highlight": true
+        },
+        {
+          "id": "val_4",
+          "type": "box",
+          "label": "4",
+          "x": 3,
+          "y": 0,
+          "highlight": true
+        },
+        {
+          "id": "val_2",
+          "type": "box",
+          "label": "2",
+          "x": 4.5,
+          "y": 0,
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Completing Pass 1",
+      "description": "After swapping 5 and 4, we compare adjacent elements at index 2 and 3 (5 and 2).",
+      "elements": [
+        {
+          "id": "val_1",
+          "type": "box",
+          "label": "1",
+          "x": 0,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "val_4",
+          "type": "box",
+          "label": "4",
+          "x": 1.5,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "val_5",
+          "type": "box",
+          "label": "5",
+          "x": 3,
+          "y": 0,
+          "highlight": true
+        },
+        {
+          "id": "val_2",
+          "type": "box",
+          "label": "2",
+          "x": 4.5,
+          "y": 0,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Pass 2 - Sorting Rest of elements",
+      "description": "Array is [1, 4, 2, 5]. We begin second pass. 1 vs 4 (no swap). 4 vs 2 (swap!).",
+      "elements": [
+        {
+          "id": "val_1",
+          "type": "box",
+          "label": "1",
+          "x": 0,
+          "y": 0,
+          "highlight": false
+        },
+        {
+          "id": "val_2",
+          "type": "box",
+          "label": "2",
+          "x": 1.5,
+          "y": 0,
+          "highlight": true
+        },
+        {
+          "id": "val_4",
+          "type": "box",
+          "label": "4",
+          "x": 3,
+          "y": 0,
+          "highlight": true
+        },
+        {
+          "id": "val_5",
+          "type": "box",
+          "label": "5",
+          "x": 4.5,
+          "y": 0,
+          "highlight": false
+        }
+      ]
+    }
+  ]
+}
