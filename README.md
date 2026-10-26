@@ -72,21 +72,6 @@
 * **Curriculum & Knowledge Extraction:** PDF chunking, syllabus ingestion, and topic dependency trees.
 * **Pipelined Audio & TTS:** Background prefetching and progressive audio streaming (`gtts` and Web Speech API).
 
----
-
-## 🔍 Critical Reality Check: Guidey vs. Solvely.ai
-
-A frank evaluation of where Guidey stands compared to market competitors like **Solvely.ai**:
-
-| Feature / Dimension | Solvely.ai | Guidey (Current Reality) | Actionable Gap |
-| :--- | :--- | :--- | :--- |
-| **Visual Polish & UI Aesthetics** | **Sleek, Production-Grade:** Clean typography, minimalist paper aesthetic, smooth micro-interactions. | **"Vibe Coded" / Prototype:** Functional but visually inconsistent; rough transitions and layout clutter. | Refine design system; replace ad-hoc styling with curated tokens and fluid animations. |
-| **Diagramming Capabilities** | **Excels at Complex Diagrams:** Smooth vector paths for biology (mitochondria, cell anatomy), physics, and geometry. | **Basic / Text-Heavy:** Relies primarily on KaTeX math, text blocks, and simple scatter plots; cannot draw anatomical or multi-part scientific illustrations. | Build a vector diagram library (SVG/Canvas path generation) for complex STEM diagrams. |
-| **Instructor Explaining & Pointing** | **Nails Stroke & Sync:** Pen nib cursor precisely follows lines/strokes in real time as words are spoken. | **Clunky Synchronization:** 3D avatar gestures are general; pointing at specific board elements lacks sub-element precision. | Link avatar pointing vectors directly to bounding boxes of active semantic nodes; add animated chalk tip. |
-| **Live Interactive Exploration** | **Practical Video-Style Interactivity:** Timed gates and prompt interruptions optimized for immediate consumer flow. | **Largely a Roadmap Feature:** Concepts simulators exist as isolated components; fluid blackboard exploration is still in prototype. | Deepen student parameter manipulation directly within the board rather than inside separate widgets. |
-| **Mathematical Rigor** | **Basic Text Strings:** Often uses handwriting fonts without deep LaTeX formatting. | **Superior STEM Typesetting:** True KaTeX mathematical formulas, matrices, and equation blocks. | **Guidey's Core Strength:** Double down on rigorous college-level and high-school STEM depth. |
-
----
 
 ## 📂 Project Structure
 
