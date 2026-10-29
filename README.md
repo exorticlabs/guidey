@@ -156,3 +156,9 @@ Open `http://localhost:3000/tutor` in your browser.
 2. **Dynamic Diagramming Engine:** Introduce procedural SVG/canvas path generation for anatomical, physical, and scientific diagrams (circuits, cells, organic chemistry, optical rays) instead of restricting the board to text and boxes.
 3. **High-Precision Pointing & Chalk Tip Animation:** Add an animated chalk cursor that draws strokes and curves in sync with speech, and align the 3D avatar's pointing target with exact screen coordinates.
 4. **True Interactive Blackboard Exploration:** Transition concept simulators from isolated cards into full-board, direct-manipulation chalk artifacts where students can drag nodes, tweak graphs, and test hypotheses in place.
+
+---
+
+## 📄 License
+
+This project is open-sourced under the [MIT License](LICENSE).
